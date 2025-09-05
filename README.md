@@ -1,45 +1,50 @@
-Cover Letter Generator
+# Cover Letter Generator
 A Streamlit-based web application that generates professional cover letters by either uploading a resume (PDF or DOCX) to auto-fill details or manually entering information. The app extracts key details like name, email, phone, skills, and experience from the resume and creates a tailored cover letter that can be downloaded as a text file.
-Features
 
-Resume Upload: Upload a PDF or DOCX resume to automatically populate fields (name, email, phone, skills, experience).
-Manual Input: Enter details manually if no resume is uploaded or to override parsed data.
-Customizable Cover Letter: Generate a professional cover letter tailored to a specific job and company.
-Downloadable Output: Save the generated cover letter as a .txt file.
-User-Friendly Interface: Clean layout with form inputs and styled elements for better usability.
+## Features
 
-Installation
+- **Resume Upload**: Upload a PDF or DOCX resume to automatically populate fields (name, email, phone, skills, experience).
+- **Manual Input**: Enter details manually if no resume is uploaded or to override parsed data.
+- **Customizable Cover Letter**: Generate a professional cover letter tailored to a specific job and company.
+- **Downloadable Output**: Save the generated cover letter as a .txt file.
+- **User-Friendly Interface**: Clean layout with form inputs and styled elements for better usability.
 
-Clone the Repository:
-git clone <repository-url>
-cd cover-letter-generator
+## Installation
 
+- ### Clone the Repository:
+```
+git clone https://github.com/PriyankaKumari-123-82/cover_letter_generator.git
+cd cover_letter_generator
+```
 
-Install Dependencies:Ensure Python 3.7+ is installed, then install the required libraries:
+- ### Install Dependencies:
+  Ensure Python 3.7+ is installed, then install the required libraries:
+```
 pip install streamlit PyPDF2 python-docx
+```
 
-
-Run the Application:
+- ### Run the Application:
+```
 streamlit run cover_letter_generator.py
 
 Open your browser to http://localhost:8501.
+```
 
+### Usage
 
-Usage
-
-Upload Resume (Optional):
+- **Upload Resume (Optional):**
 
 Upload a PDF or DOCX resume to auto-fill your name, email, phone, skills, and experience.
 Review and edit the prefilled fields if needed.
 
 
-Enter Details:
+- **Enter Details:**
 
 Provide your address, company name, company address, hiring manager’s name (optional), and job title.
 Add or modify skills (comma-separated) and a brief description of relevant experience.
 
 
-Generate Cover Letter:
+- **Generate Cover Letter:**
 
 Click "Generate Cover Letter" to create a professional cover letter.
 Review the output in the text area.
@@ -47,20 +52,22 @@ Click "Download Cover Letter" to save it as a .txt file.
 
 
 
-Requirements
+### Requirements
 
-Python 3.7 or higher
-Libraries:
-streamlit
-PyPDF2
-python-docx
+- Python 3.7 or higher
+- Libraries:
+- streamlit
+- PyPDF2
+- python-docx
 
 
 
-Install them using:
+### Install them using:
+```
 pip install -r requirements.txt
+```
 
-Notes
+### Notes
 
 Resume Parsing: The app uses basic parsing to extract details from resumes. For best results, use resumes with clear sections (e.g., "Skills," "Experience") and standard formats for name, email, and phone.
 Styling: The app uses custom CSS for better readability. If text is hard to read, consider adding a dark theme by creating a .streamlit/config.toml file:[theme]
@@ -74,7 +81,8 @@ font = "sans serif"
 
 File Size Limit: Streamlit’s default upload limit is 200MB. For larger resumes, adjust the server settings with --server.maxUploadSize.
 
-Contributing
+### Contributing
 Contributions are welcome! Please submit a pull request or open an issue for suggestions or bug reports.
-License
+
+### License
 This project is licensed under the MIT License.
